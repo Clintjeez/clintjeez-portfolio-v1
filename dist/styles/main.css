@@ -85,6 +85,23 @@ html, body {
     background: #000;  
 } */
 
+@font-face {
+    font-family: SK-Moder;
+    src: url('../assets/fonts/Sk-Modernist/Sk-Modernist-Regular.otf');
+    src: url('../assets/fonts/Sk-Modernist/Sk-Modernist-Mono.otf');
+    src: url('../assets/fonts/Sk-Modernist/Sk-Modernist-Bold.otf');
+}
+@font-face {
+    font-family: Monument Extended;
+    src: url('../assets/fonts/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+    font-family: Bigilla;
+    src: url('../assets/fonts/bigilla/Bigilla.otf');
+    src: url('../assets/fonts/bigilla/Bigilla-Bold.otf');
+}
+
 *{
     margin: 0;
     padding: 0;
