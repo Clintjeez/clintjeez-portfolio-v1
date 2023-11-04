@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClintJeez</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <!-- Preloader ---------------------------------- -->
+   
+        <div class="loader">
+            <div class="circles">
+                <div class="circle circle-outer"></div>  
+              <div class="circle circle-inner"></div>
+              <div class="circle-inner-rotator"></div>
+            </div>
+            <p class="copy-txt">&copy;2023 - Loading assets....</p>
+        </div>
+   
+   
+    <!-- Preloader ---------------------------------- -->
+
+    <!-- Hero section --------------------------------------- -->
+    <div class="hero">
+        <img src="./assets/hero_img.JPEG" alt="">
+    </div>
+    <!-- Hero section --------------------------------------- -->
+    
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script>
+   
+   gsap.from(".circles", 2, {
+            top: "-100%",
+            ease: "elastic.out",
+            delay: 0.5,
+        })
+
+        gsap.to(".circle-inner", 1, {
+            width: "75px",
+            height: "75px",
+            ease: "power4.inOut",
+            delay: 2,
+        });
+
+        gsap.to(".circle-inner-rotator", 1, {
+            scale: 1,
+            ease: "power4.inOut",
+            delay: 2.5,
+        })
+
+        gsap.to(".circles", 1.5, {
+            rotation: 360,
+            ease: "power4.inOut",
+            delay: 3
+        })
+
+        gsap.fromTo(".hero", {
+            duration: 2,
+            left: "100%",
+            scale: 0.5,
+            ease: "power4.inOut",
+            delay: 4,
+        }, {
+            duration: 2,
+            left: "50%",
+            scale: 0.5,
+            transform: "translateX(-50%)",
+            ease: "power4.inOut",
+            delay: 4
+
+        });
+        
+    </script>
+</body>
+</html>
