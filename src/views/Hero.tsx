@@ -13,7 +13,7 @@ const Hero = () => {
     <h1 >Clinton James <br />Software <br />&nbsp;Engineer</h1>
     </div>
       <div className='w-full flex justify-end '>
-        <Image src="/images/hero-img.jpeg" alt=''  
+        <Image src="images/hero-img.jpeg" alt=''  
         width={420}
         height={450}
          className='absolute bottom-[30px]'
